@@ -1,0 +1,46 @@
+.page-search-container{
+    margin: 2vw 3vw;
+    position: relative;
+}
+
+.page-search-text{
+
+    h2{
+        font-size: 2vw;
+    }
+
+    p{
+        font-family: 'Inter';
+        font-size: 1vw;
+        margin: 0;
+    }
+}
+
+.page-search-document-mobile{
+    display: none;
+  
+}
+
+@media handheld, all and (max-width:600px) {
+    
+.page-search-text{
+    p{
+        font-size: 4vw;
+    }
+
+    h2{
+        font-size: 5vw;
+    }
+}
+  .page-search-document-mobile{
+    display: block;
+    position: absolute;
+    left: 80%;
+    top: 2%;
+    width: 15vw;
+    height: 15vw;
+  }
+
+}
+
+

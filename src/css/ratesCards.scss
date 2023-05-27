@@ -1,0 +1,298 @@
+.rates-container-cards{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10vh 10vh auto;
+    width: 30vw;
+    height: 55vh;
+    border-radius: 1vh;
+    box-shadow: $shadow ;
+    border: 2px solid #FFB64F;
+    font-family: 'Inter';
+    margin-bottom: 10vh;
+  
+}
+
+
+
+.rates-cards-header{
+    display: flex;
+    background-color: #FFB64F;
+    position: relative;
+    padding-left: 2vw;
+    padding-top: 0.5vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    border-radius: 1vh 1vh 0 0;
+    h2 {
+        font-size: 2vw;
+        font-family: 'Inter';
+        margin: 0;
+        margin-top: 2vh;
+    }
+
+    p {
+        font-size: 1vw;
+        font-family: 'Inter';
+        margin: 0;
+    }
+}
+
+.rates-cards-icon{
+    position: absolute;
+    top: 1vw;
+    left: 78%;
+   
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+
+.rates-card-price{
+    position: relative;
+    display: flex;
+
+}
+
+.rates-card-active{
+    display: flex;
+    width: 10vw;
+    height: 2vh;
+    position: absolute;
+    top: 1vw;
+    left: 60%;
+    border-radius: 10vw;
+    background-color: #3BA5E0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    p::before {
+
+        content: "Текущий тариф";
+        color: #FFFFFF;
+        font-family: 'Inter';
+        font-size: 1vw;
+        margin: 0;
+    }
+    
+}
+
+.rates-price-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+    margin-top: 2vh;
+    margin-left: 2vw;    
+    p {
+       
+        font-family: 'Inter';
+        font-size: 1vw;
+        margin: 0;
+    }
+
+.rates-price{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        margin-top: 2vh;
+
+        p {
+            margin-right: 1vw;
+            font-family: 'Inter-Medium';
+            font-weight: bold;
+            font-size: 2vw;
+            margin-bottom: 1vh;
+        }
+       
+    }
+    
+}
+
+.rates-price-cross {
+    text-decoration: line-through ;
+    opacity: .5;
+    margin: 0;
+    
+}
+
+.rates-tariffIncludes-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7vh;
+    margin-left: 2vw;
+    h3 {
+        font-size: 1.2vw;
+        font-family: 'Inter-Medium';
+        font-weight: bold;
+        margin: 0;
+
+    }
+
+    ul {
+        padding: 0;
+      
+    }
+
+    li{
+        list-style-type: none;
+        width: -moz-fit-content;
+        width: fit-content;
+        font-family: "Inter";
+        font-size: 1vw;
+        display: grid;
+        justify-items: stretch;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: 2vw 20vw;
+        grid-template-rows: auto;
+
+       
+    }
+
+    li:before{
+        content: url('../images/checks.svg') ;
+ 
+    }
+}
+
+.rates-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.reates-card-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    .info-btn{
+        margin: 0;
+        width: 80%;
+        font-family: 'Inter';
+        font-size: 1vw;
+    }
+}
+
+
+
+@media handheld, all and (max-width:680px) {
+    .rates-cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: space-around;
+
+    }
+
+    .rates-container-cards{
+       width: 70vw;
+       min-height: 55vh;
+    }
+
+    
+
+.rates-cards-header{
+    
+    padding-left: 2vh;
+    padding-top: 0.5vh;
+   
+    h2 {
+        font-size: 8vw;  
+    }
+
+    p {
+        font-size: 3vw;
+    }
+}
+
+.rates-cards-icon{
+    position: absolute;
+    top: .1vw;
+    left: 70%;
+   
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+}
+.rates-card-active{
+   
+    visibility: hidden;
+    
+}
+
+
+.rates-price-container{
+   
+    margin-top: 4vh;
+    margin-left: 4vw;    
+    p {
+        font-size: 4vw;
+    }
+
+.rates-price{
+       
+        p {
+            font-size: 8vw;
+            margin-bottom: .5vh;
+        }
+       
+    }
+    
+}
+
+
+
+.rates-tariffIncludes-container{
+   
+    h3 {
+        font-size: 6.2vw;
+        }
+
+    ul {
+        padding: 0;
+      
+    }
+
+    li{
+        font-size: 4.2vw;
+        grid-template-columns: 7vw 60vw;
+
+    }
+}
+
+
+.reates-card-btn-container{
+   
+    .info-btn{
+        font-family: 'Inter';
+        font-size: 5vw;
+        border-radius: 5px;
+    }
+}
+
+}
+

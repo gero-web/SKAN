@@ -1,0 +1,290 @@
+
+.container-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.container-links-headers{
+    display: block;
+   
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 2vw;
+        font-family: 'Inter';
+        margin-right: 5vw;
+ 
+    }
+}
+.logo{
+   
+    padding: 0;
+    width: 10vw;
+    height: 10vh;
+    img {
+        content: url("../images/logo.svg");
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+    }
+  
+}
+
+.container-header-loginInAndSignIn{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+
+    .headers-sigIn{
+        font-family: 'Inter';
+        font-size: 2vw;
+        letter-spacing: 1%;
+        opacity: 0.4;
+    }
+
+   
+    button{
+        background-color: #7CE3E1;
+        border: none;
+        font-size: 2vw;
+        border-radius: 5px;
+    }
+    
+    button:hover{
+       cursor: pointer;
+    }
+}
+
+
+.card-header{
+    display: flex;
+    border-radius: 5px;
+    background-color: rgba($color:  #D9D9D9, $alpha: .3) ;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin: 0vw 2.5vw;
+    div{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    span{
+        font-family: 'Inter-Bold';
+        font-size: 2vw;
+        margin-left: 1vw;
+    }
+
+    p {
+        color: black;
+        font-family: 'Inter';
+        font-size: 1vw;
+        opacity: 0.4;
+
+    }
+
+    .inUseCompany{
+       font-size: larger;
+       font-weight: bold;
+    }
+
+    .limitCompany{
+        font-size: larger;
+        font-weight: bold;
+        color: #8AC540;
+    }
+    .left-div{
+        margin-left: .4vw;
+    }
+}
+
+.logooff-container{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+
+    p{
+        margin: 1vw 1vw;
+    }
+    
+
+    .userInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-right: 1vw;
+
+        .userName{
+            font-family: 'Inter';
+            opacity: .7;
+            font-size: 2vw;
+            font-weight: bold;
+
+        }
+        .userLogoff{
+            font-family: 'Inter';
+            opacity: .4;
+            font-size: 1vw;
+            font-weight: bold;
+           
+        }
+        .userLogoff:hover{
+            cursor: pointer;
+        }
+    }
+
+    .avatar{
+        border-radius: 50%;
+        img{
+            object-fit: fill;
+        }
+    }
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.header-menu-navigation-menu{
+    display: none;
+    position: relative;
+}
+
+.header-menu-btn{
+   display: none;
+}
+
+@media handheld, all and (max-width:600px) {
+
+    .container-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-menu-btn{
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    .avatar{
+        display: none;
+    }
+
+    .userInfo{
+        display: none;
+    }
+   
+    .logo{  
+        width: 30vw;
+        height: 10vh;
+      
+    }
+    .menu-container{
+        display: none;
+    }
+
+    .header-menu-navigation-menu{
+        display: none;
+        width: 100%;
+        height: 25vh;
+        position: relative;
+        margin: 0;
+        
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .container-links-headers{
+       
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        top: 60px;
+        left: 0%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        row-gap: 20px;
+
+        a {
+            font-size: 4vw;
+            font-family: 'Inter';
+            color:#FFFFFF;
+        }
+       
+    }
+
+    .container-header-loginInAndSignIn{
+        flex-direction: column;
+        margin-top:2vh;
+
+        .headers-sigIn{
+            font-size: 4vw;
+            color: #FFFFFF;
+        }
+    
+       
+        button{
+            margin-top:1vh;
+            background-color: #7CE3E1;
+            border: none;
+            width: 60vw;
+            font-size: 4vw;
+            border-radius: 5px;
+        }
+
+        .vl{
+            display: none;
+        }
+        
+        button:hover{
+           cursor: pointer;
+        }
+    }
+    
+  
+}
+
+    
+    
+

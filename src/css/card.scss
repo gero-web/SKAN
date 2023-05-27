@@ -1,0 +1,63 @@
+.card-container{
+    
+    padding-top: 3vh;
+    padding-left: 1vw;
+    width: 25vw;
+    height: 15vw;
+    border-radius: 10px;
+    box-shadow: $shadow ;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: flex-start;
+}
+
+.card-text{
+    font-family: 'Inter';
+    font-size: 1.5vw;
+ 
+}
+
+
+.card-icon{
+    position: absolute;
+    overflow: hidden;
+    top: 10%;
+    left: 2%;
+    width: 5vw;
+    height: 6vh;
+  
+    img{
+       filter: invert(0.4) sepia(2) saturate(5) hue-rotate(125deg);
+       width: 100%;
+       height: 100%;
+    }
+}
+
+
+@media handheld, all and (max-width:600px) {
+
+    .card-container{ 
+        width: 40vw;
+        height: 20vw;
+       
+    }
+    .card-text{
+       
+        font-size: 2.8vw;
+     
+    }
+
+    .card-icon{
+        
+        top: -2%;
+        left: 2%;
+        
+    }
+    
+    
+}

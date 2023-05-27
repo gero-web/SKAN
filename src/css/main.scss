@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Ferry' ;
+    src: local('Ferry'), url(../fonts/ferry_black.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: local('Ferry'), url(../fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: local('Ferry'), url(../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Ferry'), url(../fonts/Inter-Regular.ttf);
+}
+
+*{
+    font-family: 'Ferry';
+}
+
+
+$shadow : rgba(0, 0, 0, 0.16) 1px 5px 10px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 3px;
+
+body {
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+
+    font-family: 'Inter-Medium';
+    font-style: normal;
+    font-size: 2vw;
+    padding: 1vh 2vw;
+}
+
+.vl{
+    border-left: 0.3vw solid #029491;
+    opacity: 0.6;
+    height: 6vh;
+    border-radius: 1px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.info-btn{
+    background-color: #5970FF;
+    font-size: 2vw;
+    border-radius: 2px;
+    border: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 4vh;
+}
+
+.container-body-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: stretch;
+    margin-top: 5vh;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    margin-left: 2vw;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+
+
+@import 'header.scss';
+@import 'caption.scss';
+@import 'card.scss';
+@import 'ratesCards.scss';
+@import 'login.scss';
+@import 'carusel.scss';
+@import 'pageSearch.scss';
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+@import 'footer.scss';
+@import 'summary.scss';
+@import 'summaryCarusel.scss';
+@import 'document.scss';
+@import 'form-search-container';
+
+
+@media handheld, all and (max-width:600px) {
+
+    .container-body-svg{
+        width: 600px;
+        overflow: hidden;
+        img {
+            margin-left: 20%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+
+}

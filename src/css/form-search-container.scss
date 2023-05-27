@@ -1,0 +1,295 @@
+
+    
+
+.form-search-container{
+    box-shadow: rgba(0, 0, 0, 0.16) 2px 10px 15px 1px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    
+    border-radius: 10px;
+    margin-top: 2vh;
+    position: relative;
+    display: flex;
+    flex-direction: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+
+    .form-search-fields{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+    }
+
+  
+   
+    input{
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 1vw;
+        height: 4vh;
+        border: 1px solid #C7C7C7;
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.16) 1px 5px 10px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 3px;
+        border-radius: 4px;
+        padding: 0vh 1vw;
+        color:black;
+        width: 14vw ;
+        margin-bottom: 2vh;
+    }
+
+    input:focus{
+        border: 2px solid #C7C7C7;
+        outline: none;
+    } 
+
+    select{
+        background:#fff url('../images/arrow.svg')  97% 50% no-repeat ;
+        font-family: 'Inter';
+        font-size: 1vw;
+        width: 16.5vw ;
+        height: 4vh;
+        border: 1px solid #C7C7C7;
+        box-shadow: rgba(0, 0, 0, 0.16) 1px 5px 10px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 3px;
+        border-radius: 4px;
+        padding: 0vh 1vw;
+        color:black;
+        margin-bottom: 2vh;
+        text-align: justify;
+        -moz-appearance:none; /* Firefox */
+        -webkit-appearance:none; /* Safari and Chrome */
+        
+        option{
+            font-family: 'Inter';
+            font-size: 1vw;
+           
+        }
+
+        option:checked{
+            background: #029491;
+            color: white;
+         }
+
+    }
+
+    select:focus{
+        border: 2px solid #C7C7C7;
+        outline: none;
+    } 
+
+   
+    
+ 
+    input[type="date"] {
+        background:#fff url('../images/arrow.svg')  97% 50% no-repeat ;
+        width: 10vw ;
+        height: 5vh;
+        margin: 0;
+     
+    }
+    
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+      
+    }
+      
+       
+
+    p{
+        font-family: 'Inter';
+        font-size: 2vw;
+        margin: 0;
+
+        margin-bottom: 2.7vh;
+        span {
+            padding-block: 2vw;
+            font-size: 2vw;
+            font-family: 'Inter';    
+        }
+ 
+    }
+
+    .form-search-fields-dates{
+        display: flex;
+        justify-content: space-between;
+        input{
+            margin-right: 20px;
+        }
+       
+    }
+    
+}
+
+.form-fields-cheks-container{
+    input{
+        width: 14px;
+        height: 14px;
+      
+      
+   
+    }
+   /* Checked */
+ input[type=checkbox]:checked  {
+     appearance: none;
+     background:  center / contain no-repeat url('../images/checks.svg')  ;
+     padding: 0;
+     overflow: hidden;
+   
+}
+ 
+}
+
+.form-fields-cheks-container{
+    input:focus{
+        border: none;
+        outline: none;
+    } 
+    div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        input{
+            width: 2vw;
+            height: 2vh;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+
+        }
+        input:disabled + label{
+            opacity: .5;
+        }
+        label{
+            margin-left: 1vw;
+            font-family: 'Inter';
+            font-size: 1vw;
+        }
+
+    }
+    .form-btn-container{
+        margin-left: 4vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4vh;
+        p{
+            font-family: 'Inter';
+           
+        }
+        .info-btn:disabled ,.info-btn:disabled + P{
+            opacity: .5;
+        }
+    }
+}
+
+.form-container{
+    display: flex;
+
+
+    .form-search-container{
+       box-shadow: rgba(0, 0, 0, 0.16) 2px 10px 15px 1px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+        padding: 2vw 2vh;
+        border-radius: 10px;
+        margin-top: 2vh;
+        position: relative;
+        display: flex;
+        flex-direction: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: center;
+
+        margin-right: 20px;
+    }
+
+    p{
+        font-size: 1.4vw;
+    }
+
+}
+
+.form-mobile-raket{
+    display: none;
+}
+
+@media handheld, all and (max-width:600px) {
+
+    .form-mobile-raket{
+        display: block;
+    }
+
+    .form-raket{
+        display: none;
+    }
+
+    .form-container{
+        display: flex;
+        flex-direction: column;
+    
+        .form-search-container{
+           box-shadow:$shadow ;
+            padding: 2vw 2vh;
+            border-radius: 10px;
+            margin-top: 2vh;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            align-content: flex-start;
+            justify-content: center;
+    
+            margin-right: 20px;
+          
+        }
+
+        .form-fields-cheks-container {
+            display: none;     
+        }
+
+        .form-search-fields{
+            * {
+                font-size: 5vw;
+            }
+
+            .form-search-fields-dates{
+                flex-direction: column;
+                input{
+                    margin-bottom: 20px;
+                }
+            }
+            input{
+                width: 65vw;
+                
+            }
+
+            select{
+                width: 65vw;
+            }
+
+
+        }
+        p{
+            font-size: 1.4vw;
+        }
+
+    }
+}
+
+
+.fields-error-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: #FF5959;
+        font-family: 'Inter';
+
+    }
+}
